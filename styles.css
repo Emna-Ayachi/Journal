@@ -1,0 +1,183 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif; 
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #8D957E; /* Optional: to ensure the nav has a background */
+    z-index: 1000; /* Optional: to ensure the nav stays on top of other elements */
+}
+ul{
+    display:flex;
+    list-style: none;
+}
+ul li {
+    margin: 0 20px;
+    position:relative;
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    width: 0;
+    height: 2px;
+    background-color:#fff;
+    left:0;
+    bottom: -10px;
+    transition: 0.3s all ease-in-out;
+}
+ul li:hover::before{
+    width:100%;
+    left:0;
+}
+ul li a{
+    text-decoration : none;
+    color: #fff;
+    font-size:18px;
+    font-weight:500;
+}
+.background{
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-color: #8D957E; /* Fallback color to fill any gaps */
+    height: 100vh; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    color: white; /* White text for visibility */
+    justify-content: center;
+    text-align: center;
+}
+.background .content h1 {
+    font-size: 4rem; /* Large heading */
+    font-weight: 700; /* Bold font for emphasis */
+    margin: 0;
+}
+  
+.background .content p {
+    font-size: 1.5rem; 
+}
+.background2{
+    background-size: cover;
+    background-color: #E4D6C5;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+section {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+.shop {
+    display: flex;
+    gap: 20px; /* Space between the two divs */
+    width: 80%; /* Limit the width of the container */
+    max-width: 1200px;
+}  
+.image{
+    flex: 1;
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain; 
+}
+.customise {
+    flex: 1;
+    width: 50%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.title {
+    margin-bottom: 20px; 
+    color: #000; 
+}
+.buttons {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    margin-bottom: 20px; /* Space between buttons and price */
+}
+button {
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+button.green:hover{
+    background-color: #92ada4;
+}
+button.purple:hover{
+    background-color: #492341;
+}
+button.peach:hover{
+    background-color: #daa38f;
+}
+.price {
+    margin-bottom: 10px; /* Space between price and description */
+    color: #000; /* Adjust color as needed */
+}
+.description {
+    color: #666; /* Adjust color as needed */
+}
+.background3{
+    background-size: cover;
+    background-color: #6F4D38;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+pre{
+    text-decoration : none;
+    color: #fff;
+    font-weight:500;
+    font-size: 1.5rem; 
+}
+.background4{
+    background-size: cover;
+    background-color: #AFCDD0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color:#fff;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+p {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.contact-info {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
